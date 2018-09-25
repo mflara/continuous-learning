@@ -1,0 +1,45 @@
+# # Ex 1- 
+# 
+import numpy as np
+# print(np.__version__)
+# print(np.show_config())
+# 
+# a = np.zeros(10)
+# print(a)
+# a = np.zeros(shape=(2,2))
+# print(a)
+# 
+# print(np.info(np.add)) #Useful
+# 
+# #a = np.zeros(10);
+# #a[4]=1
+# a = np.array([0, 0 ,0, 0, 1, 0, 0, 0, 0, 0])
+# print(a)
+# 
+#
+
+a = np.arange(start =10,stop = 50)
+print(a)
+
+print('\n')
+
+a = np.array([1,2,3,4,5,6,7,8,9])
+b = a[::-1]
+print(b)
+
+print('\n')
+
+a = np.array([0,1,2,3,4,5,6,7,8]).reshape(3,3)
+print(a)
+print('')
+
+a = np.array([1,2,0,0,4,0])
+print(a.nonzero())
+print('')
+
+a = np.eye(1)
+print(a)
+a = np.eye(2)
+print(a)
+a = np.eye(3)
+print(a)

@@ -1,0 +1,157 @@
+# Ex1
+#name = input('Enter Name')
+#age = input('Age')
+#current_year = 2018
+#year100 = current_year+(100 - int(age))
+#print('%s , you will turn 100 in %s' % (name, year100))
+
+
+# Ex2
+#number = int(input('Enter a Number'))
+#is_odd = (number%2==1)
+
+#if is_odd == True:
+#	print('You entered an odd number')
+#else:
+#	print('You entered an even number')
+
+# Ex3
+#a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+#less_than_5 = [i for i in a if i<5]
+#print(less_than_5)
+
+# Ex4
+#number = int(input('Enter a Number'))
+#for i in range(number//2):
+#	if number%(i+1)==0:
+#		print(i+1)
+
+# Ex5
+#a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+#b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+#c=[]
+#for i in a:
+#	if i in b:
+#		c.append(i)
+#print(a)
+#print(b)
+#print('Common Elements')
+#print(c)
+
+# Ex6
+#a = input('Enter a String')
+
+## indexing method
+#a_len = len(a)
+#is_palindrome = True
+#print('Is Palindrome?')
+#for i in range(len(a)):
+#	if a[i]!=a[a_len-i-1]:
+#		is_palindrome = False	
+#		break
+#print(is_palindrome)
+
+##list reversal method
+#b = a[::-1]
+#print('Input is a Palindrome? Answer: %s' % (a==b))
+
+# Ex7
+#a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+#even_a = [i for i in a if i%2==0]
+#print(even_a)
+
+# Ex11
+
+#number = int(input('Enter a number'))
+#def isPrime(number):
+#	output = True
+#	
+#	if number <=1:
+#		return False
+#	
+#	for i in range(2,number//2+1):
+#		if number%i==0:
+#			output = False
+#
+#	return output
+#
+#print(isPrime(number))
+
+# Ex12 <joining lists of strings with the .join() is very useful>
+
+#a = input('sentence')
+#b = a.split()
+#b = b[::-1]
+#print(' '.join(b))
+
+
+# Ex13 - Fibonacci
+#a = int(input('How many numbers?'))
+#
+#def fib(N):
+#	if N>2:
+#		return fib(N-1) + fib(N-2)
+#	else:
+#		return 1;
+#
+#print(fib(a))
+
+# Ex14 - Remove Duplicates
+#a = [1,1,2,3,4,4,4,5,5,6,7,8,9,9,10,11]
+#b=[]
+#for i in a:
+#	if i not in b:
+#		b.append(i)
+#print('Starting list \n %s' % (a))
+#print(b)	
+
+
+# Ex21 - Write to File
+#with open('exercise21.txt', 'w') as open_file:
+#	open_file.write('holla back')
+
+
+# Ex22 - Read from File
+#filename = 'ex22_names.txt'
+#with open(filename,'r') as open_file:
+#	raw_text = open_file.read()	
+#
+#raw_text = raw_text.split()
+#unique_names = set()
+#
+#for i in raw_text:
+#	unique_names.add(i)
+#print(unique_names)
+
+# Ex23
+#filename1 = 'prime_less1000.txt'
+#filename2 = 'happy_to1000.txt'
+#
+#with open(filename1,'r') as open_file:
+#	primes = open_file.read()
+#
+#primes = primes.split()
+#primes_int = []
+#for i in primes:
+#	primes_int.append(int(i))
+#
+#with open(filename2,'r') as open_file:
+#	happy = open_file.read()
+#
+#happy = happy.split()
+#happy_int = []
+#for i in happy:
+#        happy_int.append(int(i))
+#
+#overlap = []
+#for i in primes_int:
+#	if i in happy_int:
+#		overlap.append(i)
+#
+#print(overlap)
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+#import numpy as np
+
+## print(np.__version__)
+## print(np.show_config())
+##
+## -- 2x2 Matrix of Zeros  
+## a = np.zeros(10)
+#print(np.unravel_index(100,(6,7,8)))
+## print(a)
+## a = np.zeros(shape=(2,2))
+## print(a)
+## 
+## -- Information for a numpy function
+## print(np.info(np.add)) #Useful
+## 
+## -- Insert a value at a specific index
+## #a = np.zeros(10);
+## #a[4]=1
+## a = np.array([0, 0 ,0, 0, 1, 0, 0, 0, 0, 0])
+## print(a)
+## 
+##
+## -- Print numbers from 10-49
+#a = np.arange(start =10,stop = 50)
+#print(a)
+#
+#print('\n')
+#
+## -- Reverse An Array
+#a = np.array([1,2,3,4,5,6,7,8,9])
+#b = a[::-1]
+#print(b)
+#
+#print('\n')
+#
+## Reshape a numpy array to a 2D Matrix 
+#a = np.array([0,1,2,3,4,5,6,7,8]).reshape(3,3)
+#print(a)
+#print('')
+#
+## -- Print the nonzero elements of a numpy array
+#a = np.array([1,2,0,0,4,0])
+#print(a.nonzero())
+#print('')
+#
+##--Numpy Function for  Identity Function--#
+#a = np.eye(1)
+#print(a)
+#a = np.eye(2)
+#print(a)
+#a = np.eye(3)
+#print(a)
+#print('')
+#
+## -- Find the Max and Min of a 2D Numpy Array
+#a = np.random.random((10,10))
+#print(a)
+#print(a.max())
+#print(a.min())
+#print('')
+#
+## -- Find the mean of a 2D Numpy Array
+#a = np.random.random(30)
+#print(a)
+#print(a.mean())
+#print('')
+#
+## -- Create a 2D Matrix of 1's with a Zero in the Center 
+#import numpy as np
+#a = np.ones((3,3))
+#a[1:-1,1:-1]=0  #clever use of indexing
+#print(a)
+#
+#print(0 * np.nan)
+#print(np.nan == np.nan)
+#print(np.inf > np.nan)
+#print(np.nan - np.nan)
+#print(0.3 == (3.0* 0.1)) ## Floating-point arithmetic
+#
+#a = np.diag(1+np.arange(4),k=-1) # Useful & Good to Know
+#print(a)
+#print('')
+#
+## -- Create an 8x8 Matrix with a Checker Board Pattern 
+#a = np.zeros(shape = (8,8))
+#a[::2,1::2] = 1
+#a[1::2,::2]=1
+#print(a)
+#print('')
+
+## -- Index of 100th element flattened 3D array
+#print(np.unravel_index(100,(6,7,8)))
+#
+
+## -- Normalize Random Matrix
+#mat = np.random.random((5,5))
+#val_max,val_min = mat.max(),mat.min()
+#mat = (mat - val_min)/(val_max-val_min)
+#print(mat)
+
+## -- Matrix Product
+#np.random.seed(123)
+#a = np.random.random((5,3))
+#b = np.random.random((3,2))
+#c = np.matmul(a,b)
+#print(c)
+
+print(sum(range(5),-1))
+from numpy import *
+print(sum(range(5),-1))
+
+
